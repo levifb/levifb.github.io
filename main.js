@@ -1,7 +1,5 @@
 document.documentElement.classList.add("js");
 
-const calmo = matchMedia("(prefers-reduced-motion: reduce)").matches;
-
 // Elementos aparecem ao entrar na tela
 const surgem = document.querySelectorAll(".abertura h1, .agora, .ficha, .faixa, .texto, .grande, .sobre-colunas, .marcos li");
 surgem.forEach((el) => el.classList.add("surge"));
@@ -14,27 +12,6 @@ const olho = new IntersectionObserver((entradas) => {
   }
 }, { rootMargin: "0px 0px -10% 0px" });
 surgem.forEach((el) => olho.observe(el));
-
-// O nome gigante de cada projeto anda para o lado conforme a rolagem
-const titulos = [...document.querySelectorAll(".titulao span")];
-function moverTitulos() {
-  const h = innerHeight;
-  for (const t of titulos) {
-    const r = t.parentElement.getBoundingClientRect();
-    if (r.bottom < -100 || r.top > h + 100) continue;
-    const p = 1 - (r.top + r.height) / (h + r.height);
-    t.style.transform = `translateX(${-p * 30}%)`;
-  }
-}
-if (!calmo) {
-  let pedido = false;
-  addEventListener("scroll", () => {
-    if (pedido) return;
-    pedido = true;
-    requestAnimationFrame(() => { moverTitulos(); pedido = false; });
-  }, { passive: true });
-  moverTitulos();
-}
 
 // Ilustração do grafo: comunidades de empresas, cada uma em volta de um centro
 const svg = document.getElementById("grafo");
