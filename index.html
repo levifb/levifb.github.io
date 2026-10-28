@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Levi Barbosa — Machine learning e software com IA</title>
+<meta name="description" content="Portfólio de Levi Barbosa, estudante de Ciência da Computação na UFC: machine learning, agentes de IA e software em produção.">
+<meta property="og:title" content="Levi Barbosa — Trabalhos">
+<meta property="og:description" content="Machine learning, agentes de IA e software em produção.">
+<meta property="og:image" content="https://levifb.github.io/img/levi.webp">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <a class="marca" href="#inicio">Levi Barbosa <span class="traco">—</span> Trabalhos</a>
+  <a class="seta-redonda" href="#trabalhos" aria-label="Ir para os trabalhos">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15m0 0-6-6m6 6 6-6"/></svg>
+  </a>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#marcos">Marcos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main id="inicio">
+
+<section class="abertura">
+  <img class="avatar" src="img/levi.webp" alt="Foto de Levi Barbosa" width="150" height="150">
+  <div class="abertura-grade">
+    <h1>Construo modelos de machine learning e software com IA, do dado bruto ao produto no ar.</h1>
+    <aside class="agora">
+      <span class="selo"><i></i>Agora</span>
+      <p>Cientista de dados em P&amp;D no LED/CPMAT (UFAL) e iniciação científica na UFC. Procurando estágio em engenharia de IA.</p>
+    </aside>
+  </div>
+  <div class="botoes">
+    <a class="pilula" href="#trabalhos">Trabalhos selecionados</a>
+    <a class="pilula" href="#sobre">Sobre mim</a>
+  </div>
+</section>
+
+<div id="trabalhos"></div>
+
+<!-- 1. Previsão -->
+<article class="projeto" style="--cor:#1f6f5c">
+  <div class="projeto-corpo">
+    <div class="ficha">
+      <h2>Previsão de demanda em saúde</h2>
+      <ul class="papeis"><li>Machine learning</li><li>Pipeline de dados</li><li>P&amp;D com empresa</li></ul>
+      <span class="caixa-seta" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4v10h12m0 0-4-4m4 4-4 4"/></svg></span>
+    </div>
+    <div class="faixa">
+      <div class="visual numeros">
+        <div class="num-linha"><span class="num">12,4%</span><span class="leg">erro (WAPE) da combinação de modelos</span></div>
+        <div class="num-linha apagado"><span class="num">18,8%</span><span class="leg">erro do modelo que a empresa usa hoje</span></div>
+        <div class="barras" aria-hidden="true"><span style="width:66%"></span><span style="width:100%"></span></div>
+      </div>
+    </div>
+    <div class="texto">
+      <p>Quantos atendimentos cada unidade de uma das maiores empresas de saúde do Brasil vai receber, turno a turno, numa quinzena futura? Escrevi o XGBoost Poisson global, treinado com todas as séries juntas no Azure Databricks, e o pipeline que roda os quatro modelos da equipe numa chamada só.</p>
+      <p>Cada saída passa por um contrato de 7 colunas antes de ser gravada. Numa rodada real, ele barrou o CSV errado de outro modelo e o resto seguiu. Antes de trocar Spark por pandas, exigi diferença zero contra a versão aprovada pela empresa: 508.339 linhas × 33 colunas.</p>
+      <dl class="fatos">
+        <div><dt>XGBoost sozinho</dt><dd>12,6% de erro, 10 a 22 s por quinzena</dd></div>
+        <div><dt>Base</dt><dd>~2,7 milhões de linhas, 168 unidades</dd></div>
+        <div><dt>Código</dt><dd>privado (projeto com empresa)</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="titulao" aria-hidden="true"><span>Previsão de demanda — 2026 — Previsão de demanda — 2026</span></div>
+</article>
+
+<!-- 2. Correção -->
+<article class="projeto invertido" style="--cor:#3346d3">
+  <div class="projeto-corpo">
+    <div class="ficha">
+      <h2>Correção de provas com agentes</h2>
+      <ul class="papeis"><li>Agentes de IA</li><li>Claude Code</li><li>Automação</li></ul>
+      <a class="caixa-seta" href="https://github.com/levifb/correcoespeti" aria-label="Código no GitHub"><svg viewBox="0 0 24 24"><path d="M6 4v10h12m0 0-4-4m4 4-4 4"/></svg></a>
+    </div>
+    <div class="faixa">
+      <figure class="visual tela inclinada">
+        <img src="img/correcao.webp" alt="Resumo de uma correção no terminal: tabela com as notas por problema e o motivo de cada desconto, nomes dos alunos ocultos" width="1442" height="565" loading="lazy">
+      </figure>
+      <a class="carimbo" href="https://github.com/levifb/correcoespeti">
+        <svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="c2" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text><textPath href="#c2" textLength="486" lengthAdjust="spacing">VER NO GITHUB · VER NO GITHUB · </textPath></text></svg>
+        <span class="miolo">↗</span><span class="sr">Ver no GitHub</span>
+      </a>
+    </div>
+    <div class="texto">
+      <p>Um programa de olimpíadas de matemática recebe as listas como foto de caderno ou PDF, e corrigir demonstração escrita à mão toma tempo. No fluxo que montei, o Claude Code lê o critério oficial, divide os alunos em lotes de cerca de 8 e manda cada lote para um subagente corretor.</p>
+      <p>Todos recebem o mesmo prompt de correção (<code>CORRECAO.md</code>). A conversa principal iguala os descontos entre lotes, e quando um corretor propõe uma regra nova, ela passa a valer para todos. Numa das listas, o agente refez a conta no computador e achou um erro na própria pauta oficial.</p>
+      <dl class="fatos">
+        <div><dt>Volume</dt><dd>~1.400 soluções manuscritas em 13 listas</dd></div>
+        <div><dt>Em uso</dt><dd>desde ago/2026, com revisão do professor</dd></div>
+        <div><dt>Stack</dt><dd>Claude Code (subagentes), Apps Script, Python</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="titulao" aria-hidden="true"><span>Correção com agentes — 2026 — Correção com agentes — 2026</span></div>
+</article>
+
+<!-- 3. Stone -->
+<article class="projeto" style="--cor:#0a8f55">
+  <div class="projeto-corpo">
+    <div class="ficha">
+      <h2>Grupos econômicos pela rede de sócios</h2>
+      <ul class="papeis"><li>Grafos</li><li>LLM com saída em JSON</li><li>Desafio Stone, 12º WSMPI</li></ul>
+      <a class="caixa-seta" href="https://github.com/levifb/stonewsmpi" aria-label="Código no GitHub"><svg viewBox="0 0 24 24"><path d="M6 4v10h12m0 0-4-4m4 4-4 4"/></svg></a>
+    </div>
+    <div class="faixa">
+      <div class="visual grafo">
+        <svg id="grafo" viewBox="0 0 400 400" role="img" aria-label="Ilustração de um grafo com comunidades de empresas"></svg>
+        <p class="grafo-num"><b>5,7 mi</b> empresas → <b>626 mil</b> grupos</p>
+      </div>
+      <a class="carimbo" href="https://www.youtube.com/watch?v=4OGtDmBbEfA&amp;t=1520s">
+        <svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="c3" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text><textPath href="#c3" textLength="486" lengthAdjust="spacing">VER APRESENTAÇÃO · VER APRESENTAÇÃO · </textPath></text></svg>
+        <span class="miolo">▶</span><span class="sr">Ver a apresentação no YouTube</span>
+      </a>
+    </div>
+    <div class="texto">
+      <p>O desafio da Stone era achar empresas sob controle comum usando só os dados públicos de CNPJ. Montei um grafo pessoa–empresa em que o peso da ligação mede a chance de duas empresas serem do mesmo grupo: um sócio fundador em comum vale muito, um contador em comum quase nada. Projetei em empresa–empresa, penalizei quem aparece em milhares de empresas e rodei Louvain.</p>
+      <p>O Gemini dá nome e setor a um grupo quando alguém o abre no app, com saída em JSON e cache. Como checagem, o método pôs no mesmo grupo as empresas que o Banco Central tratou como um só conglomerado ao liquidar o Banco Master em 2025.</p>
+      <dl class="fatos">
+        <div><dt>Dados</dt><dd>9,2 milhões de vínculos entre 7,6 milhões de pessoas e as empresas</dd></div>
+        <div><dt>App de busca</dt><dd>2 milhões de empresas, respostas em 30 a 350 ms com 84 MB de RAM</dd></div>
+        <div><dt>Entrega</dt><dd>artigo em inglês e <a href="https://www.youtube.com/watch?v=4OGtDmBbEfA&amp;t=1520s">apresentação no ICMC-USP</a></dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="titulao" aria-hidden="true"><span>Grupos econômicos — 2026 — Grupos econômicos — 2026</span></div>
+</article>
+
+<!-- 4. Portal -->
+<article class="projeto invertido" style="--cor:#0a6d90">
+  <div class="projeto-corpo">
+    <div class="ficha">
+      <h2>Portal de simulados ITA/IME</h2>
+      <ul class="papeis"><li>Full stack</li><li>Feito com Claude Code</li><li>Em produção</li></ul>
+      <span class="caixa-seta" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4v10h12m0 0-4-4m4 4-4 4"/></svg></span>
+    </div>
+    <div class="faixa">
+      <figure class="visual grade inclinada" aria-label="Exemplo da grade de notas com dados fictícios">
+        <table>
+          <thead><tr><th>Aluno</th><th>MAT</th><th>FIS</th><th>QUI</th><th>Média</th><th>CLASSIF</th></tr></thead>
+          <tbody>
+            <tr><td>ALUNO 001</td><td class="v">10</td><td class="v">9</td><td class="v">8</td><td class="v">8,4</td><td>APTO</td></tr>
+            <tr><td>ALUNO 002</td><td class="v">9</td><td class="a">• 6</td><td class="v">8</td><td class="a">• 6,9</td><td>APTO</td></tr>
+            <tr><td>ALUNO 003</td><td class="a">• 7</td><td class="r">▼ 3</td><td class="a">• 5</td><td class="a">• 5,2</td><td>NÃO APTO</td></tr>
+            <tr><td>ALUNO 004</td><td class="v">11</td><td class="v">10</td><td class="a">• 7</td><td class="v">7,8</td><td>APTO</td></tr>
+            <tr><td>ALUNO 005</td><td class="a">• 6</td><td class="a">• 5</td><td class="x">—</td><td class="a">• 4,1</td><td>NÃO APTO</td></tr>
+          </tbody>
+        </table>
+        <figcaption>dados fictícios</figcaption>
+      </figure>
+    </div>
+    <div class="texto">
+      <p>A coordenação das turmas ITA/IME de uma escola de Fortaleza, a de maior aprovação percentual no ITA do país, acompanhava os simulados em planilhas soltas. Primeiro juntei tudo em planilhas com fórmulas que funcionam no Google e no Excel. Depois construí sozinho, com o Claude Code, o portal que as substitui.</p>
+      <p>O coordenador lança as notas, vê a turma e gera boletins em PDF. O aluno vê só o próprio desempenho, e quem garante isso é o banco (Row Level Security), não a tela. As regras de nota foram testadas contra 553 resultados reais da planilha.</p>
+      <dl class="fatos">
+        <div><dt>Ritmo</dt><dd>52 PRs em 7 dias, de zero até a produção</dd></div>
+        <div><dt>Testes</dt><dd>~380 no Vitest (107 só de permissão) e 28 no Playwright</dd></div>
+        <div><dt>Stack</dt><dd>Next.js, TypeScript, PostgreSQL (Supabase), Cloudflare Workers</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="titulao" aria-hidden="true"><span>Portal de simulados — 2026 — Portal de simulados — 2026</span></div>
+</article>
+
+<!-- 5. ML à mão -->
+<article class="projeto" style="--cor:#c4561c">
+  <div class="projeto-corpo">
+    <div class="ficha">
+      <h2>Machine learning escrito à mão</h2>
+      <ul class="papeis"><li>NumPy e SciPy</li><li>Modelos probabilísticos</li><li>Pesquisa</li></ul>
+      <a class="caixa-seta" href="https://github.com/levifb/mlprob" aria-label="Código no GitHub"><svg viewBox="0 0 24 24"><path d="M6 4v10h12m0 0-4-4m4 4-4 4"/></svg></a>
+    </div>
+    <div class="faixa">
+      <figure class="visual equacoes inclinada">
+        <p class="eq-rot">EM, mistura de gaussianas</p>
+        <p class="eq">γ<sub>ik</sub> = π<sub>k</sub> 𝒩(x<sub>i</sub> | μ<sub>k</sub>, Σ<sub>k</sub>) / Σ<sub>j</sub> π<sub>j</sub> 𝒩(x<sub>i</sub> | μ<sub>j</sub>, Σ<sub>j</sub>)</p>
+        <p class="eq-rot">Backpropagation</p>
+        <p class="eq">δ<sup>(l)</sup> = (W<sup>(l+1)</sup>)<sup>⊤</sup> δ<sup>(l+1)</sup> ⊙ σ′(z<sup>(l)</sup>)</p>
+        <p class="eq-rot">IRLS</p>
+        <p class="eq">w ← w − (Φ<sup>⊤</sup>RΦ + λI)<sup>−1</sup> ∇E(w)</p>
+      </figure>
+      <a class="carimbo" href="https://github.com/levifb/mlprob">
+        <svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="c5" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text><textPath href="#c5" textLength="486" lengthAdjust="spacing">VER NO GITHUB · VER NO GITHUB · </textPath></text></svg>
+        <span class="miolo">↗</span><span class="sr">Ver no GitHub</span>
+      </a>
+    </div>
+    <div class="texto">
+      <p>Nas disciplinas de Aprendizagem de Máquina da UFC, escrevi os modelos a partir das equações, sem biblioteca pronta: MLP com backpropagation, momentum e early stopping; Naive Bayes bayesiano em reviews da Amazon; regressão logística MAP por IRLS; mistura de gaussianas treinada por EM.</p>
+      <p>Na iniciação científica, com o prof. César Lincoln Mattos, avalio métodos de detecção de anomalias em séries temporais com o benchmark TSB-AD, que mostra como as métricas da área podem enganar.</p>
+      <dl class="fatos">
+        <div><dt>Repositórios</dt><dd><a href="https://github.com/levifb/mlprob">mlprob</a> e <a href="https://github.com/levifb/MachineLearning">MachineLearning</a></dd></div>
+        <div><dt>Stack</dt><dd>NumPy, SciPy, scikit-learn, PyOD</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="titulao" aria-hidden="true"><span>Machine learning à mão — 2025 — Machine learning à mão — 2025</span></div>
+</article>
+
+<!-- Mais trabalhos -->
+<article class="projeto invertido mais" style="--cor:#9b2335">
+  <div class="projeto-corpo">
+    <div class="ficha">
+      <h2>Mais trabalhos</h2>
+      <ul class="papeis"><li>Sites e apps</li><li>Clientes reais</li><li>Automação</li></ul>
+    </div>
+    <div class="faixa">
+      <figure class="visual tela inclinada">
+        <img src="img/fernandesbeauty.webp" alt="Página inicial do site fernandesbeauty.com.br" width="1440" height="900" loading="lazy">
+      </figure>
+      <a class="carimbo" href="https://fernandesbeauty.com.br">
+        <svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="c6" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text><textPath href="#c6" textLength="486" lengthAdjust="spacing">VER O SITE · VER O SITE · VER O SITE · </textPath></text></svg>
+        <span class="miolo">↗</span><span class="sr">Abrir fernandesbeauty.com.br</span>
+      </a>
+    </div>
+    <div class="texto">
+      <ul class="lista">
+        <li><a href="https://fernandesbeauty.com.br"><b>fernandesbeauty.com.br</b><span>Site de vendas de cursos de penteado, no ar desde set/2026. Astro.</span></a></li>
+        <li><a href="https://github.com/levifb/songe"><b>Songe</b><span>App instalável de metas para casais. React, TypeScript e Firebase, com 118 testes.</span></a></li>
+        <li><a href="https://github.com/levifb/plataformasolucao"><b>Plataforma Solução</b><span>Aulas, calendário e fórum de um curso de olimpíadas. Django, com 85 testes.</span></a></li>
+        <li><div><b>Livros de olimpíadas</b><span>Trabalho contratado: cerca de 950 questões classificadas por assunto com subagentes. Python e LaTeX.</span></div></li>
+        <li><a href="https://github.com/levifb/artgallery"><b>Java</b><span>Orientação a objetos (artgallery) e JDBC com padrão DAO (PapocoJDBC).</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="titulao" aria-hidden="true"><span>Mais trabalhos — 2025 – 2026 — Mais trabalhos — 2025 – 2026</span></div>
+</article>
+
+<section id="sobre" class="sobre">
+  <h2 class="rotulo">Sobre</h2>
+  <p class="grande">Sou o Levi. Estudo Ciência da Computação na Universidade Federal do Ceará, com formatura em dez/2028, e moro em Fortaleza.</p>
+  <div class="sobre-colunas">
+    <p>Vim da maratona de programação e das olimpíadas de matemática, e isso aparece no jeito que eu trabalho: antes de mostrar um número, quero ter certeza de que ele está certo. Foi assim no pipeline de previsão, que só aceitou trocar de versão com diferença zero, e no portal, testado contra cada resultado da planilha antiga.</p>
+    <p>Hoje divido o tempo entre um projeto de P&amp;D com empresa, a iniciação científica e as ferramentas que construo com IA. Uso o Claude Code todos os dias, com subagentes quando o trabalho cabe em lotes. Falo inglês fluente.</p>
+  </div>
+</section>
+
+<section id="marcos" class="marcos">
+  <h2 class="rotulo">Marcos</h2>
+  <ol>
+    <li><span class="ano">2026</span><b>2º lugar</b><span class="onde">Maratona Cearense de Programação</span></li>
+    <li><span class="ano">2026</span><b>Apresentação no 12º WSMPI</b><span class="onde">Desafio Stone, ICMC-USP, São Carlos</span></li>
+    <li><span class="ano">2026</span><b>Cientista de dados em P&amp;D</b><span class="onde">LED/CPMAT, Universidade Federal de Alagoas</span></li>
+    <li><span class="ano">2025</span><b>2º lugar no Ceará</b><span class="onde">ICPC, Subregional Brasil</span></li>
+    <li><span class="ano">OBI</span><b>2× ouro, 1º lugar</b><span class="onde">Olimpíada Brasileira de Informática</span></li>
+    <li><span class="ano">OCM</span><b>Ouro, 1º lugar no nível 3</b><span class="onde">Olimpíada Cearense de Matemática</span></li>
+    <li><span class="ano">OBM</span><b>Prata, bronzes e menção</b><span class="onde">Olimpíada Brasileira de Matemática</span></li>
+    <li><span class="ano">Rioplatense</span><b>Bronze</b><span class="onde">Olimpíada Rioplatense, Buenos Aires</span></li>
+  </ol>
+</section>
+
+<section id="contato" class="contato">
+  <h2 class="rotulo">Contato</h2>
+  <p class="grande">Quer conversar sobre um estágio em IA?</p>
+  <a class="email" href="mailto:levifbarbosa@alu.ufc.br">levifbarbosa@alu.ufc.br</a>
+  <div class="botoes">
+    <a class="pilula" href="https://github.com/levifb">GitHub</a>
+    <a class="pilula" href="https://www.linkedin.com/in/levi-barbosa-0ba04b1a0">LinkedIn</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <div class="rodape-grade">
+    <div><h3>Eu</h3><a href="#sobre">Sobre</a><a href="#marcos">Marcos</a><a href="#contato">Contato</a></div>
+    <div><h3>Trabalhos</h3><a href="#trabalhos">Previsão de demanda</a><a href="https://github.com/levifb/correcoespeti">Correção com agentes</a><a href="https://github.com/levifb/stonewsmpi">Grupos econômicos</a><a href="https://github.com/levifb/mlprob">ML à mão</a></div>
+    <div><h3>Redes</h3><a href="https://github.com/levifb">GitHub</a><a href="https://www.linkedin.com/in/levi-barbosa-0ba04b1a0">LinkedIn</a><a href="mailto:levifbarbosa@alu.ufc.br">E-mail</a></div>
+    <div class="assinatura"><b>Levi Barbosa</b><span>Ciência da Computação, UFC</span><span>Fortaleza, CE</span></div>
+  </div>
+  <div class="rodape-base"><span>© 2026 Levi Barbosa · atualizado em 28/10/2026</span><a href="https://github.com/levifb/levifb.github.io">Ver o código</a></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
